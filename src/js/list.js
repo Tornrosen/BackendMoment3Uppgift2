@@ -1,6 +1,6 @@
 "use strict";
 
-let url = "http://127.0.0.1:3000/api/jobs";
+let url = "http://127.0.0.1:3000/jobs";
 
 //starta funktion för att visa jobb när fönstret öppnas
 
@@ -12,7 +12,7 @@ window.onload = () => {
 async function deleteJob(id) {
 
 
-    return fetch("http://127.0.0.1:3000/api/jobs/" + id, {
+    return fetch("http://127.0.0.1:3000/jobs/" + id, {
         method: 'DELETE',
     }).then(response => response.json())
         .then(window.location.reload());
@@ -42,7 +42,7 @@ async function showJobs(jobs) {
             deleteBtn.type = "button";
             deleteBtn.className = "deleteBtn";
             deleteBtn.value = "Ta bort jobb";
-            deleteBtn.addEventListener("click", () => deleteJob(job.id));
+            deleteBtn.addEventListener("click", () => deleteJob(job._id));
 
             article.appendChild(deleteBtn);
             jobListEl.appendChild(article);

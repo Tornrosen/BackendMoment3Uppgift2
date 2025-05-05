@@ -2,7 +2,7 @@
 
 //skapa variabler för att lägga till jobb, kolla input samt ansluta till API
 
-let url = "http://127.0.0.1:3000/api/jobs";
+let url = "http://127.0.0.1:3000/jobs";
 let submitBtnEl = document.querySelector("#submitBtn");
 let descriptionEl = document.querySelector("#description");
 let errorSpaceEl = document.querySelector("#errorSpace");
