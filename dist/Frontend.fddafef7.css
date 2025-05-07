@@ -144,8 +144,8 @@ main {
 
   .open {
     position: absolute;
-    top: 3%;
-    right: 20%;
+    top: 1%;
+    right: 5%;
   }
 
   .close {
@@ -203,6 +203,17 @@ main {
   a:link, a:visited {
     color: linen;
     text-decoration: none;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 720px) {
+  .open {
+    top: 2%;
+    right: 10%;
   }
 }
 /*# sourceMappingURL=Frontend.fddafef7.css.map */
